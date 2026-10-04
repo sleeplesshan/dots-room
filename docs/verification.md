@@ -25,7 +25,7 @@
 | Open-Meteo 실제 API | **통과**. 공개 WeatherStore로 서울 대표 지점의 익명 실제 API 응답을 읽어 ready와 모델 시각을 확인. 합성 값·0·누락·오래됨과 사용자 설정 시간대 변환도 통과. |
 | 새 공개 앱 실기기 USB / Tailscale / LTE / 화면 깨우기 | **미검증**. 기존 개인 설치 앱을 업데이트하거나 지속 페어링을 만들지 않음. |
 | 30fps / p95 상태 반영 300ms / 8시간 soak | **미검증**. 빌드·정지 캡처·짧은 GIF를 성능/장시간 검사로 대신하지 않음. |
-| GitHub Actions | 게시 후 상태를 확인한다. 실제 로그인/태블릿 검사는 CI와 분리됨. |
+| GitHub Actions | 첫 공개 run의 bridge-assets job 통과. Android SDK 준비에서 폐기된 `tools` 패키지 요청이 실패해 `platform-tools`만 설치하도록 수정하고 재검사 중. 실제 로그인/태블릿 검사는 CI와 분리됨. |
 
 ## 재현과 읽기 경로
 
