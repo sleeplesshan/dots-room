@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "provider": "open-meteo",
+  "kind": "model",
+  "region": {
+    "name": "서울",
+    "latitude": 37.5665,
+    "longitude": 126.9780,
+    "timezone": "Asia/Seoul"
+  },
+  "status": "ready",
+  "fetchedAt": "2026-10-03T06:45:00Z",
+  "attemptedAt": "2026-10-03T06:45:00Z",
+  "error": "",
+  "reading": {
+    "validAt": "2026-10-03T06:45:00Z",
+    "code": 0,
+    "temperatureC": 0,
+    "apparentC": null,
+    "humidityPercent": 0,
+    "precipitationMm": 0,
+    "windMs": 0,
+    "isDay": false,
+    "minC": 0,
+    "maxC": 0
+  }
+}

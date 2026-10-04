@@ -1,0 +1,2908 @@
+{
+  "version": 1,
+  "logicalSize": [
+    384,
+    448
+  ],
+  "cellSize": 96,
+  "floor": "day/subway-pm-floor.png",
+  "animations": [
+    {
+      "assetId": "neutral-S",
+      "action": "neutral",
+      "direction": "S",
+      "frameDurationsMs": [
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          2,
+          2,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "walk-S",
+      "action": "walk",
+      "direction": "S",
+      "frameDurationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          102,
+          2,
+          96,
+          96
+        ],
+        [
+          202,
+          2,
+          96,
+          96
+        ],
+        [
+          302,
+          2,
+          96,
+          96
+        ],
+        [
+          402,
+          2,
+          96,
+          96
+        ],
+        [
+          502,
+          2,
+          96,
+          96
+        ],
+        [
+          602,
+          2,
+          96,
+          96
+        ],
+        [
+          702,
+          2,
+          96,
+          96
+        ],
+        [
+          2,
+          102,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "neutral-SW",
+      "action": "neutral",
+      "direction": "SW",
+      "frameDurationsMs": [
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          102,
+          102,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "walk-SW",
+      "action": "walk",
+      "direction": "SW",
+      "frameDurationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          202,
+          102,
+          96,
+          96
+        ],
+        [
+          302,
+          102,
+          96,
+          96
+        ],
+        [
+          402,
+          102,
+          96,
+          96
+        ],
+        [
+          502,
+          102,
+          96,
+          96
+        ],
+        [
+          602,
+          102,
+          96,
+          96
+        ],
+        [
+          702,
+          102,
+          96,
+          96
+        ],
+        [
+          2,
+          202,
+          96,
+          96
+        ],
+        [
+          102,
+          202,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "neutral-W",
+      "action": "neutral",
+      "direction": "W",
+      "frameDurationsMs": [
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          202,
+          202,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "walk-W",
+      "action": "walk",
+      "direction": "W",
+      "frameDurationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          302,
+          202,
+          96,
+          96
+        ],
+        [
+          402,
+          202,
+          96,
+          96
+        ],
+        [
+          502,
+          202,
+          96,
+          96
+        ],
+        [
+          602,
+          202,
+          96,
+          96
+        ],
+        [
+          702,
+          202,
+          96,
+          96
+        ],
+        [
+          2,
+          302,
+          96,
+          96
+        ],
+        [
+          102,
+          302,
+          96,
+          96
+        ],
+        [
+          202,
+          302,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "neutral-NW",
+      "action": "neutral",
+      "direction": "NW",
+      "frameDurationsMs": [
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          302,
+          302,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "walk-NW",
+      "action": "walk",
+      "direction": "NW",
+      "frameDurationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          402,
+          302,
+          96,
+          96
+        ],
+        [
+          502,
+          302,
+          96,
+          96
+        ],
+        [
+          602,
+          302,
+          96,
+          96
+        ],
+        [
+          702,
+          302,
+          96,
+          96
+        ],
+        [
+          2,
+          402,
+          96,
+          96
+        ],
+        [
+          102,
+          402,
+          96,
+          96
+        ],
+        [
+          202,
+          402,
+          96,
+          96
+        ],
+        [
+          302,
+          402,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "neutral-NE",
+      "action": "neutral",
+      "direction": "NE",
+      "frameDurationsMs": [
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          502,
+          502,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "walk-NE",
+      "action": "walk",
+      "direction": "NE",
+      "frameDurationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          602,
+          502,
+          96,
+          96
+        ],
+        [
+          702,
+          502,
+          96,
+          96
+        ],
+        [
+          2,
+          602,
+          96,
+          96
+        ],
+        [
+          102,
+          602,
+          96,
+          96
+        ],
+        [
+          202,
+          602,
+          96,
+          96
+        ],
+        [
+          302,
+          602,
+          96,
+          96
+        ],
+        [
+          402,
+          602,
+          96,
+          96
+        ],
+        [
+          502,
+          602,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "neutral-E",
+      "action": "neutral",
+      "direction": "E",
+      "frameDurationsMs": [
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          602,
+          602,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "walk-E",
+      "action": "walk",
+      "direction": "E",
+      "frameDurationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          702,
+          602,
+          96,
+          96
+        ],
+        [
+          2,
+          702,
+          96,
+          96
+        ],
+        [
+          102,
+          702,
+          96,
+          96
+        ],
+        [
+          202,
+          702,
+          96,
+          96
+        ],
+        [
+          302,
+          702,
+          96,
+          96
+        ],
+        [
+          402,
+          702,
+          96,
+          96
+        ],
+        [
+          502,
+          702,
+          96,
+          96
+        ],
+        [
+          602,
+          702,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "neutral-SE",
+      "action": "neutral",
+      "direction": "SE",
+      "frameDurationsMs": [
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          702,
+          702,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "walk-SE",
+      "action": "walk",
+      "direction": "SE",
+      "frameDurationsMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          2,
+          802,
+          96,
+          96
+        ],
+        [
+          102,
+          802,
+          96,
+          96
+        ],
+        [
+          202,
+          802,
+          96,
+          96
+        ],
+        [
+          302,
+          802,
+          96,
+          96
+        ],
+        [
+          402,
+          802,
+          96,
+          96
+        ],
+        [
+          502,
+          802,
+          96,
+          96
+        ],
+        [
+          602,
+          802,
+          96,
+          96
+        ],
+        [
+          702,
+          802,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "idle-S",
+      "action": "idle",
+      "direction": "S",
+      "frameDurationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          2,
+          902,
+          96,
+          96
+        ],
+        [
+          102,
+          902,
+          96,
+          96
+        ],
+        [
+          202,
+          902,
+          96,
+          96
+        ],
+        [
+          302,
+          902,
+          96,
+          96
+        ],
+        [
+          402,
+          902,
+          96,
+          96
+        ],
+        [
+          502,
+          902,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "think-S",
+      "action": "think",
+      "direction": "S",
+      "frameDurationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          602,
+          902,
+          96,
+          96
+        ],
+        [
+          702,
+          902,
+          96,
+          96
+        ],
+        [
+          2,
+          1002,
+          96,
+          96
+        ],
+        [
+          102,
+          1002,
+          96,
+          96
+        ],
+        [
+          202,
+          1002,
+          96,
+          96
+        ],
+        [
+          302,
+          1002,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "read-S",
+      "action": "read",
+      "direction": "S",
+      "frameDurationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-front-two-arms-atlas.png",
+      "frameRects": [
+        [
+          2,
+          2,
+          96,
+          96
+        ],
+        [
+          102,
+          2,
+          96,
+          96
+        ],
+        [
+          202,
+          2,
+          96,
+          96
+        ],
+        [
+          302,
+          2,
+          96,
+          96
+        ],
+        [
+          402,
+          2,
+          96,
+          96
+        ],
+        [
+          502,
+          2,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "work-S",
+      "action": "work",
+      "direction": "S",
+      "frameDurationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-front-two-arms-atlas.png",
+      "frameRects": [
+        [
+          2,
+          102,
+          96,
+          96
+        ],
+        [
+          102,
+          102,
+          96,
+          96
+        ],
+        [
+          202,
+          102,
+          96,
+          96
+        ],
+        [
+          302,
+          102,
+          96,
+          96
+        ],
+        [
+          402,
+          102,
+          96,
+          96
+        ],
+        [
+          502,
+          102,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "sleep-S",
+      "action": "sleep",
+      "direction": "S",
+      "frameDurationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          2,
+          1202,
+          96,
+          96
+        ],
+        [
+          102,
+          1202,
+          96,
+          96
+        ],
+        [
+          202,
+          1202,
+          96,
+          96
+        ],
+        [
+          302,
+          1202,
+          96,
+          96
+        ],
+        [
+          402,
+          1202,
+          96,
+          96
+        ],
+        [
+          502,
+          1202,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "celebrate-S",
+      "action": "celebrate",
+      "direction": "S",
+      "frameDurationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "loop": false,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          402,
+          1302,
+          96,
+          96
+        ],
+        [
+          502,
+          1302,
+          96,
+          96
+        ],
+        [
+          602,
+          1302,
+          96,
+          96
+        ],
+        [
+          702,
+          1302,
+          96,
+          96
+        ],
+        [
+          2,
+          1402,
+          96,
+          96
+        ],
+        [
+          102,
+          1402,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "confused-S",
+      "action": "confused",
+      "direction": "S",
+      "frameDurationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          202,
+          1402,
+          96,
+          96
+        ],
+        [
+          302,
+          1402,
+          96,
+          96
+        ],
+        [
+          402,
+          1402,
+          96,
+          96
+        ],
+        [
+          502,
+          1402,
+          96,
+          96
+        ],
+        [
+          602,
+          1402,
+          96,
+          96
+        ],
+        [
+          702,
+          1402,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "listening-S",
+      "action": "listening",
+      "direction": "S",
+      "frameDurationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md",
+      "atlas": "bami-atlas.png",
+      "frameRects": [
+        [
+          2,
+          1502,
+          96,
+          96
+        ],
+        [
+          102,
+          1502,
+          96,
+          96
+        ],
+        [
+          202,
+          1502,
+          96,
+          96
+        ],
+        [
+          302,
+          1502,
+          96,
+          96
+        ],
+        [
+          402,
+          1502,
+          96,
+          96
+        ],
+        [
+          502,
+          1502,
+          96,
+          96
+        ]
+      ]
+    },
+    {
+      "assetId": "curious-S",
+      "action": "curious",
+      "direction": "S",
+      "atlas": "bami-touch-atlas.png",
+      "frameRects": [
+        [
+          2,
+          2,
+          96,
+          96
+        ],
+        [
+          102,
+          2,
+          96,
+          96
+        ],
+        [
+          202,
+          2,
+          96,
+          96
+        ],
+        [
+          302,
+          2,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "gripAnchor": [
+        48,
+        14
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "held-S",
+      "action": "held",
+      "direction": "S",
+      "atlas": "bami-touch-atlas.png",
+      "frameRects": [
+        [
+          2,
+          102,
+          96,
+          96
+        ],
+        [
+          102,
+          102,
+          96,
+          96
+        ],
+        [
+          202,
+          102,
+          96,
+          96
+        ],
+        [
+          302,
+          102,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "gripAnchor": [
+        48,
+        14
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "dizzy-S",
+      "action": "dizzy",
+      "direction": "S",
+      "atlas": "bami-touch-atlas.png",
+      "frameRects": [
+        [
+          2,
+          202,
+          96,
+          96
+        ],
+        [
+          102,
+          202,
+          96,
+          96
+        ],
+        [
+          202,
+          202,
+          96,
+          96
+        ],
+        [
+          302,
+          202,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "gripAnchor": [
+        48,
+        14
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "spark-S",
+      "action": "spark",
+      "direction": "S",
+      "atlas": "day/spark.png",
+      "frameRects": [
+        [
+          2,
+          2,
+          96,
+          96
+        ],
+        [
+          102,
+          2,
+          96,
+          96
+        ],
+        [
+          202,
+          2,
+          96,
+          96
+        ],
+        [
+          302,
+          2,
+          96,
+          96
+        ],
+        [
+          402,
+          2,
+          96,
+          96
+        ],
+        [
+          502,
+          2,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "loop": false,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "bed-lie-S",
+      "action": "bed-lie",
+      "direction": "S",
+      "atlas": "day/bed-poses.png",
+      "frameRects": [
+        [
+          2,
+          2,
+          96,
+          96
+        ],
+        [
+          102,
+          2,
+          96,
+          96
+        ],
+        [
+          202,
+          2,
+          96,
+          96
+        ],
+        [
+          302,
+          2,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "loop": false,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "bed-sleep-S",
+      "action": "bed-sleep",
+      "direction": "S",
+      "atlas": "day/bed-poses.png",
+      "frameRects": [
+        [
+          2,
+          102,
+          96,
+          96
+        ],
+        [
+          102,
+          102,
+          96,
+          96
+        ],
+        [
+          202,
+          102,
+          96,
+          96
+        ],
+        [
+          302,
+          102,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        700,
+        700,
+        700,
+        700
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "bed-rise-S",
+      "action": "bed-rise",
+      "direction": "S",
+      "atlas": "day/bed-poses.png",
+      "frameRects": [
+        [
+          2,
+          202,
+          96,
+          96
+        ],
+        [
+          102,
+          202,
+          96,
+          96
+        ],
+        [
+          202,
+          202,
+          96,
+          96
+        ],
+        [
+          302,
+          202,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "loop": false,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "rest-S",
+      "action": "rest",
+      "direction": "S",
+      "atlas": "day/bed-poses.png",
+      "frameRects": [
+        [
+          2,
+          302,
+          96,
+          96
+        ],
+        [
+          102,
+          302,
+          96,
+          96
+        ],
+        [
+          202,
+          302,
+          96,
+          96
+        ],
+        [
+          302,
+          302,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        80,
+        80,
+        80,
+        80
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "work-N",
+      "action": "work",
+      "direction": "N",
+      "atlas": "day/rear-repair.png",
+      "frameRects": [
+        [
+          2,
+          2,
+          96,
+          96
+        ],
+        [
+          102,
+          2,
+          96,
+          96
+        ],
+        [
+          202,
+          2,
+          96,
+          96
+        ],
+        [
+          302,
+          2,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "think-N",
+      "action": "think",
+      "direction": "N",
+      "atlas": "day/rear-repair.png",
+      "frameRects": [
+        [
+          2,
+          2,
+          96,
+          96
+        ],
+        [
+          102,
+          2,
+          96,
+          96
+        ],
+        [
+          202,
+          2,
+          96,
+          96
+        ],
+        [
+          302,
+          2,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "rest-N",
+      "action": "rest",
+      "direction": "N",
+      "atlas": "day/rear-repair.png",
+      "frameRects": [
+        [
+          2,
+          102,
+          96,
+          96
+        ],
+        [
+          102,
+          102,
+          96,
+          96
+        ],
+        [
+          202,
+          102,
+          96,
+          96
+        ],
+        [
+          302,
+          102,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        700,
+        700,
+        700,
+        700
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "walk-N",
+      "action": "walk",
+      "direction": "N",
+      "atlas": "day/rear-walk-v2.png",
+      "frameRects": [
+        [
+          2,
+          2,
+          96,
+          96
+        ],
+        [
+          102,
+          2,
+          96,
+          96
+        ],
+        [
+          202,
+          2,
+          96,
+          96
+        ],
+        [
+          302,
+          2,
+          96,
+          96
+        ],
+        [
+          2,
+          102,
+          96,
+          96
+        ],
+        [
+          102,
+          102,
+          96,
+          96
+        ],
+        [
+          202,
+          102,
+          96,
+          96
+        ],
+        [
+          302,
+          102,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "neutral-N",
+      "action": "neutral",
+      "direction": "N",
+      "atlas": "day/rear-walk-v2.png",
+      "frameRects": [
+        [
+          2,
+          202,
+          96,
+          96
+        ],
+        [
+          102,
+          202,
+          96,
+          96
+        ],
+        [
+          202,
+          202,
+          96,
+          96
+        ],
+        [
+          302,
+          202,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        700,
+        700,
+        700,
+        700
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "breath-S",
+      "action": "breath",
+      "direction": "S",
+      "atlas": "life/breath-v1.png",
+      "frameRects": [
+        [
+          2,
+          2,
+          96,
+          96
+        ],
+        [
+          102,
+          2,
+          96,
+          96
+        ],
+        [
+          202,
+          2,
+          96,
+          96
+        ],
+        [
+          302,
+          2,
+          96,
+          96
+        ],
+        [
+          2,
+          102,
+          96,
+          96
+        ],
+        [
+          102,
+          102,
+          96,
+          96
+        ],
+        [
+          202,
+          102,
+          96,
+          96
+        ],
+        [
+          302,
+          102,
+          96,
+          96
+        ],
+        [
+          2,
+          202,
+          96,
+          96
+        ],
+        [
+          102,
+          202,
+          96,
+          96
+        ],
+        [
+          202,
+          202,
+          96,
+          96
+        ],
+        [
+          302,
+          202,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        400,
+        400,
+        400,
+        400,
+        400,
+        400,
+        400,
+        400,
+        400,
+        400,
+        400,
+        400
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "blink-S",
+      "action": "blink",
+      "direction": "S",
+      "atlas": "life/blink-v1.png",
+      "frameRects": [
+        [
+          2,
+          2,
+          96,
+          96
+        ],
+        [
+          102,
+          2,
+          96,
+          96
+        ],
+        [
+          202,
+          2,
+          96,
+          96
+        ],
+        [
+          2,
+          102,
+          96,
+          96
+        ],
+        [
+          102,
+          102,
+          96,
+          96
+        ],
+        [
+          202,
+          102,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        70,
+        70,
+        70,
+        70,
+        70,
+        70
+      ],
+      "loop": false,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "look-S",
+      "action": "look",
+      "direction": "S",
+      "atlas": "life/look-v1.png",
+      "frameRects": [
+        [
+          2,
+          2,
+          96,
+          96
+        ],
+        [
+          102,
+          2,
+          96,
+          96
+        ],
+        [
+          202,
+          2,
+          96,
+          96
+        ],
+        [
+          302,
+          2,
+          96,
+          96
+        ],
+        [
+          2,
+          102,
+          96,
+          96
+        ],
+        [
+          102,
+          102,
+          96,
+          96
+        ],
+        [
+          202,
+          102,
+          96,
+          96
+        ],
+        [
+          302,
+          102,
+          96,
+          96
+        ],
+        [
+          2,
+          202,
+          96,
+          96
+        ],
+        [
+          102,
+          202,
+          96,
+          96
+        ],
+        [
+          202,
+          202,
+          96,
+          96
+        ],
+        [
+          302,
+          202,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "loop": false,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    },
+    {
+      "assetId": "talk-S",
+      "action": "talk",
+      "direction": "S",
+      "atlas": "life/talk-v1.png",
+      "frameRects": [
+        [
+          2,
+          2,
+          96,
+          96
+        ],
+        [
+          102,
+          2,
+          96,
+          96
+        ],
+        [
+          202,
+          2,
+          96,
+          96
+        ],
+        [
+          302,
+          2,
+          96,
+          96
+        ],
+        [
+          2,
+          102,
+          96,
+          96
+        ],
+        [
+          102,
+          102,
+          96,
+          96
+        ],
+        [
+          202,
+          102,
+          96,
+          96
+        ],
+        [
+          302,
+          102,
+          96,
+          96
+        ],
+        [
+          2,
+          202,
+          96,
+          96
+        ],
+        [
+          102,
+          202,
+          96,
+          96
+        ],
+        [
+          202,
+          202,
+          96,
+          96
+        ],
+        [
+          302,
+          202,
+          96,
+          96
+        ]
+      ],
+      "frameDurationsMs": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140
+      ],
+      "loop": true,
+      "footAnchor": [
+        48,
+        90
+      ],
+      "interactionAnchor": [
+        48,
+        63
+      ],
+      "collisionBounds": [
+        38,
+        83,
+        20,
+        7
+      ],
+      "drawLayer": "character",
+      "allowedFallback": null,
+      "sourceReference": "Bami character pack",
+      "generationProvenance": "docs/sprite-prompts.md"
+    }
+  ],
+  "furniture": [
+    {
+      "id": "clock",
+      "rect": [
+        21,
+        31,
+        61,
+        21
+      ],
+      "screen": [
+        24,
+        34,
+        54,
+        13
+      ],
+      "depth": 100,
+      "render": false
+    },
+    {
+      "id": "calendar",
+      "rect": [
+        328,
+        66,
+        51,
+        67
+      ],
+      "widgetRect": [
+        333,
+        72,
+        40,
+        54
+      ],
+      "depth": 100,
+      "render": false
+    },
+    {
+      "id": "desk",
+      "rect": [
+        156,
+        1,
+        202,
+        61
+      ],
+      "depth": 54,
+      "backAsset": "day/overhead-back.png",
+      "frontAsset": "day/overhead-front.png",
+      "waypoint": "desk",
+      "anchor": [
+        292,
+        350
+      ],
+      "facing": "S",
+      "screen": [
+        165,
+        30,
+        184,
+        28
+      ]
+    },
+    {
+      "id": "chair",
+      "rect": [
+        33,
+        174,
+        184,
+        122
+      ],
+      "depth": 288,
+      "backAsset": "day/bench-back.png",
+      "frontAsset": "day/bench-front.png",
+      "collider": [
+        37,
+        235,
+        177,
+        72
+      ],
+      "waypoint": "sleep",
+      "anchor": [
+        79,
+        263
+      ],
+      "facing": "S",
+      "walkClearance": [
+        -5,
+        186,
+        260,
+        102
+      ]
+    },
+    {
+      "id": "memo",
+      "rect": [
+        242,
+        178,
+        72,
+        50
+      ],
+      "depth": 230,
+      "backAsset": "day/subway-memo-v1.png",
+      "frontAsset": "day/subway-memo-front.png",
+      "screen": [
+        250,
+        197,
+        56,
+        25
+      ],
+      "widgetRect": [
+        242,
+        178,
+        72,
+        50
+      ]
+    }
+  ],
+  "waypoints": [
+    {
+      "id": "center",
+      "point": [
+        192,
+        377
+      ],
+      "links": [
+        "desk",
+        "sleep",
+        "read"
+      ]
+    },
+    {
+      "id": "desk",
+      "point": [
+        292,
+        352
+      ],
+      "links": [
+        "center",
+        "window"
+      ]
+    },
+    {
+      "id": "sleep",
+      "point": [
+        79,
+        322
+      ],
+      "links": [
+        "center"
+      ]
+    },
+    {
+      "id": "left-lane",
+      "point": [
+        56,
+        367
+      ],
+      "links": [
+        "read"
+      ]
+    },
+    {
+      "id": "read",
+      "point": [
+        100,
+        367
+      ],
+      "links": [
+        "center",
+        "left-lane"
+      ]
+    },
+    {
+      "id": "window",
+      "point": [
+        320,
+        352
+      ],
+      "links": [
+        "desk"
+      ]
+    }
+  ],
+  "transitions": {
+    "policy": "scene-anchors",
+    "durationMs": 320,
+    "rules": [
+      "wide foot clearance and front/side routes; no narrow desk/bookcase passage",
+      "furniture entry/exit ignores only owned seat/bed; timed pose and lift",
+      "one shared layer list for rendering and opaque hit testing",
+      "rear backrest/blanket occlusion only in authored interaction; front-facing seat drawn over cushion"
+    ]
+  },
+  "visualQa": "See docs/verification.md; generated pixel artwork",
+  "walkBounds": [
+    42,
+    185,
+    300,
+    239
+  ],
+  "spawn": [
+    192,
+    377
+  ],
+  "speechAnchor": [
+    192,
+    377
+  ],
+  "ambient": [
+    {
+      "atlas": "day/train-cloud-v3.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          64,
+          13
+        ]
+      ],
+      "rect": [
+        54,
+        74,
+        112,
+        49
+      ],
+      "kind": "clouds",
+      "periodMs": 240000,
+      "drift": true
+    },
+    {
+      "atlas": "day/train-cloud-v3.png",
+      "frameRects": [
+        [
+          0,
+          0,
+          64,
+          13
+        ]
+      ],
+      "rect": [
+        211,
+        75,
+        90,
+        49
+      ],
+      "kind": "clouds",
+      "periodMs": 240000,
+      "drift": true
+    }
+  ],
+  "coworkers": [],
+  "sceneId": "subway-pm",
+  "walkRadius": [
+    18,
+    6
+  ],
+  "weatherWindows": [
+    {
+      "id": "glass-0",
+      "rect": [
+        52,
+        64,
+        125,
+        89
+      ],
+      "mask": "life/subway-pm-glass-0-v1.png",
+      "landscape": "life/city-v1.png"
+    },
+    {
+      "id": "glass-1",
+      "rect": [
+        209,
+        64,
+        100,
+        89
+      ],
+      "mask": "life/subway-pm-glass-1-v1.png",
+      "landscape": "life/city-v1.png"
+    }
+  ]
+}

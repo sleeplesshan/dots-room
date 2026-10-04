@@ -1,0 +1,346 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "provider": {
+      "type": "string",
+      "const": "open-meteo"
+    },
+    "kind": {
+      "type": "string",
+      "const": "model"
+    },
+    "region": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "timezone": {
+          "type": "string",
+          "maxLength": 100
+        }
+      },
+      "required": [
+        "name",
+        "latitude",
+        "longitude",
+        "timezone"
+      ],
+      "additionalProperties": false
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ready",
+        "stale",
+        "unavailable"
+      ]
+    },
+    "fetchedAt": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "attemptedAt": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "error": {
+      "type": "string",
+      "enum": [
+        "",
+        "NOT_FETCHED",
+        "NETWORK",
+        "TIMEOUT",
+        "INVALID_RESPONSE"
+      ]
+    },
+    "reading": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "validAt": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+            },
+            "code": {
+              "anyOf": [
+                {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "const": 0
+                    },
+                    {
+                      "type": "number",
+                      "const": 1
+                    },
+                    {
+                      "type": "number",
+                      "const": 2
+                    },
+                    {
+                      "type": "number",
+                      "const": 3
+                    },
+                    {
+                      "type": "number",
+                      "const": 45
+                    },
+                    {
+                      "type": "number",
+                      "const": 48
+                    },
+                    {
+                      "type": "number",
+                      "const": 51
+                    },
+                    {
+                      "type": "number",
+                      "const": 53
+                    },
+                    {
+                      "type": "number",
+                      "const": 55
+                    },
+                    {
+                      "type": "number",
+                      "const": 56
+                    },
+                    {
+                      "type": "number",
+                      "const": 57
+                    },
+                    {
+                      "type": "number",
+                      "const": 61
+                    },
+                    {
+                      "type": "number",
+                      "const": 63
+                    },
+                    {
+                      "type": "number",
+                      "const": 65
+                    },
+                    {
+                      "type": "number",
+                      "const": 66
+                    },
+                    {
+                      "type": "number",
+                      "const": 67
+                    },
+                    {
+                      "type": "number",
+                      "const": 71
+                    },
+                    {
+                      "type": "number",
+                      "const": 73
+                    },
+                    {
+                      "type": "number",
+                      "const": 75
+                    },
+                    {
+                      "type": "number",
+                      "const": 77
+                    },
+                    {
+                      "type": "number",
+                      "const": 80
+                    },
+                    {
+                      "type": "number",
+                      "const": 81
+                    },
+                    {
+                      "type": "number",
+                      "const": 82
+                    },
+                    {
+                      "type": "number",
+                      "const": 85
+                    },
+                    {
+                      "type": "number",
+                      "const": 86
+                    },
+                    {
+                      "type": "number",
+                      "const": 95
+                    },
+                    {
+                      "type": "number",
+                      "const": 96
+                    },
+                    {
+                      "type": "number",
+                      "const": 99
+                    }
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "temperatureC": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": -90,
+                  "maximum": 65
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "apparentC": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": -90,
+                  "maximum": 65
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "humidityPercent": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "precipitationMm": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1000
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "windMs": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 150
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "isDay": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "minC": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": -90,
+                  "maximum": 65
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "maxC": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "minimum": -90,
+                  "maximum": 65
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "validAt",
+            "code",
+            "temperatureC",
+            "apparentC",
+            "humidityPercent",
+            "precipitationMm",
+            "windMs",
+            "isDay",
+            "minC",
+            "maxC"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "provider",
+    "kind",
+    "region",
+    "status",
+    "fetchedAt",
+    "attemptedAt",
+    "error",
+    "reading"
+  ],
+  "additionalProperties": false
+}

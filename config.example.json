@@ -1,0 +1,13 @@
+{
+  "dotsUrl": "",
+  "egoBrowser": "ego-browser",
+  "port": 8788,
+  "codexQuotas": false,
+  "notes": null,
+  "weather": {
+    "name": "서울",
+    "latitude": 37.5665,
+    "longitude": 126.978,
+    "timezone": "Asia/Seoul"
+  }
+}

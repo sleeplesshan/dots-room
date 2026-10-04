@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "streamId": "00000000-0000-4000-8000-000000000001",
+  "eventId": "00000000-0000-4000-8000-000000000003",
+  "seq": 2,
+  "timestamp": "2026-10-01T00:00:00.000Z",
+  "source": {
+    "adapterId": "browser-dots-v2",
+    "sourceMode": "live",
+    "sourceSessionId": null
+  },
+  "type": "state.snapshot",
+  "payload": {
+    "sourceStatus": {
+      "state": "live",
+      "lastObservedAt": "2026-10-01T00:00:00.000Z",
+      "detail": "synthetic browser fixture",
+      "taskEvents": "unsupported"
+    },
+    "tasks": [],
+    "messages": [
+      {
+        "messageId": "golden-browser",
+        "conversationId": "browser-dots-local",
+        "role": "assistant",
+        "revision": 1,
+        "content": "형아 🌙",
+        "state": "observed",
+        "nextDelta": 0,
+        "completedAt": null,
+        "observation": {
+          "origin": "browser-ui",
+          "sourceMessageId": "golden-browser",
+          "sourceConversationId": null,
+          "sourceTimestamp": null,
+          "observedAt": "2026-10-01T00:00:00.000Z",
+          "sourceRevision": null,
+          "revisionOrigin": "local-observation",
+          "finality": "unknown",
+          "statusProvenance": "unknown"
+        },
+        "images": [
+          {
+            "assetId": null,
+            "status": "error",
+            "width": null,
+            "height": null,
+            "alt": "바미",
+            "error": "IMAGE_LOAD_FAILED"
+          }
+        ]
+      }
+    ],
+    "usage": {
+      "inputTokens": {
+        "knowledge": "unknown",
+        "value": null,
+        "origin": "unavailable",
+        "scope": "unavailable",
+        "observedAt": null,
+        "freshness": "unknown",
+        "resetAt": null,
+        "unit": "tokens"
+      },
+      "outputTokens": {
+        "knowledge": "unknown",
+        "value": null,
+        "origin": "unavailable",
+        "scope": "unavailable",
+        "observedAt": null,
+        "freshness": "unknown",
+        "resetAt": null,
+        "unit": "tokens"
+      }
+    },
+    "quotas": [],
+    "history": {
+      "truncated": false,
+      "retainedMessageCount": 1
+    },
+    "snapshotId": "00000000-0000-4000-8000-000000000004",
+    "asOfSeq": 2
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timezone": "Asia/Seoul",
+  "utc_offset_seconds": 32400,
+  "current_units": {
+    "temperature_2m": "°C",
+    "apparent_temperature": "°C",
+    "relative_humidity_2m": "%",
+    "precipitation": "mm",
+    "wind_speed_10m": "m/s"
+  },
+  "current": {
+    "time": "2026-10-03T15:45",
+    "weather_code": 0,
+    "temperature_2m": 0,
+    "apparent_temperature": null,
+    "relative_humidity_2m": 0,
+    "precipitation": 0,
+    "wind_speed_10m": 0,
+    "is_day": 0
+  },
+  "daily": {
+    "time": [
+      "2026-10-03"
+    ],
+    "temperature_2m_min": [
+      0
+    ],
+    "temperature_2m_max": [
+      0
+    ]
+  },
+  "daily_units": {
+    "temperature_2m_min": "°C",
+    "temperature_2m_max": "°C"
+  }
+}

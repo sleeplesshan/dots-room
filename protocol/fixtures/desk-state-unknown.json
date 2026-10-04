@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "execution": {
+    "knowledge": "unknown",
+    "source": "unavailable",
+    "observedAt": null,
+    "freshness": "unknown",
+    "reason": "REAL_STATE_UNAVAILABLE",
+    "tasks": []
+  },
+  "notes": {
+    "pageId": null,
+    "url": null,
+    "status": "unconfigured",
+    "revision": 0,
+    "sections": [],
+    "sourceUpdatedAt": null,
+    "observedAt": null,
+    "lastSuccessAt": null,
+    "freshness": "unknown",
+    "error": "NOT_CONFIGURED",
+    "writer": "user",
+    "declaredUpdateText": ""
+  }
+}

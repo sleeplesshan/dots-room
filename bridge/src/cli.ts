@@ -1,0 +1,20 @@
+import { existsSync,readFileSync,writeFileSync,mkdirSync } from 'node:fs';
+import { randomUUID,randomBytes } from 'node:crypto';
+import { TailscaleGateway } from './gateway.js';
+import path from 'node:path';
+import { NotesBrowser } from './notes-browser.js';
+import { CodexQuotas } from './codex-quotas.js';
+import { config } from './config.js';
+import { loadToken } from './auth.js';
+import { BamiBridge } from './server.js';
+import { MockAdapter } from './adapters/mock.js';
+import { ManualAdapter,FileAdapter } from './adapters/manual.js';
+import { MediaStore } from './media.js';
+import { BrowserDotsAdapter } from './adapters/browser-dots.js';
+import { DotsAdapter } from './adapters/dots.js';
+async function main(){const args=process.argv.slice(2);if(args[0]==='pair')throw Error('USE_APPROVED_PRIVATE_USB_PAIRING_SCRIPT');
+ const c=config(args);if(!existsSync(c.tokenFile))throw Error('PAIRING_REQUIRED: npm run build 후 tools/macos/pair-device.sh를 직접 실행하세요');const media=new MediaStore();const adapter=c.adapter==='mock'?new MockAdapter():c.adapter==='manual'?new ManualAdapter():c.adapter==='file'?new FileAdapter(c.file!):c.adapter==='browser-dots'?new BrowserDotsAdapter(media,c.egoBrowser,c.dotsUrl):new DotsAdapter();const idFile=path.join(path.dirname(c.tokenFile),'server-id');let serverId:string;if(existsSync(idFile))serverId=readFileSync(idFile,'utf8').trim();else{serverId=randomUUID();mkdirSync(path.dirname(idFile),{recursive:true,mode:0o700});writeFileSync(idFile,serverId+'\n',{mode:0o600})}if(!/^[a-f0-9-]{36}$/.test(serverId))throw Error('SERVER_ID');
+ const gatewayFile=process.env.BAMI_GATEWAY_CONFIG;const g=gatewayFile?JSON.parse(readFileSync(gatewayFile,'utf8')):null;const key=randomBytes(32).toString('base64url');
+ const bridge=new BamiBridge(adapter,loadToken(c.tokenFile),media,{serverId,weatherRegion:c.weather,...(g?{gateway:{host:g.host,key}}:{})});const gateway=g?new TailscaleGateway(c.port,g.host,key,g.peerIps):null;try{await bridge.start(c.port);bridge.weather.start();if(gateway)await gateway.start(g.port)}catch(error){await gateway?.stop();await bridge.stop();throw error;}const quotas=c.codexQuotas?new CodexQuotas(e=>bridge.emit(e,{adapterId:'codex-account-quotas-v1',sourceMode:'live',sourceSessionId:null})):null;if(quotas)await quotas.start();const notes=c.adapter==='browser-dots'&&c.notes?new NotesBrowser(bridge.desk,c.notes.pageId,c.notes.spaceId,c.egoBrowser):null;await notes?.start();console.log(`바미 브리지: 127.0.0.1:${c.port} · ${c.adapter} · ${c.adapter==='browser-dots'?'관찰·선택 메시지·재수집':'읽기 전용'}`);let closing=false;const close=()=>{if(closing)return;closing=true;bridge.weather.stop();quotas?.stop();void Promise.resolve(notes?.stop()).then(()=>gateway?.stop()).then(()=>bridge.stop()).then(()=>process.exit(0));};process.on('SIGINT',close);process.on('SIGTERM',close);
+}
+main().catch(e=>{console.error(e instanceof Error&&/^[A-Z_0-9: .가-힣]+$/.test(e.message)?e.message:'START_FAILED');process.exitCode=1;});

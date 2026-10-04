@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "provider": "open-meteo",
+  "kind": "model",
+  "region": {
+    "name": "서울",
+    "latitude": 37.5665,
+    "longitude": 126.9780,
+    "timezone": "Asia/Seoul"
+  },
+  "status": "unavailable",
+  "fetchedAt": null,
+  "attemptedAt": null,
+  "error": "NOT_FETCHED",
+  "reading": null
+}

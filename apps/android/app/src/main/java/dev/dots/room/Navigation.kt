@@ -1,0 +1,16 @@
+package dev.dots.room
+
+import kotlinx.serialization.Serializable
+import kotlin.math.*
+
+@Serializable data class Waypoint(val id:String,val point:List<Float>,val links:List<String>)
+@Serializable data class Furniture(val id:String,val rect:List<Float>,val depth:Float,val collider:List<Float>?=null,val waypoint:String?=null,val anchor:List<Float>?=null,val facing:String?=null,val overlay:List<Float>?=null,val screen:List<Float>?=null,val walkClearance:List<Float>?=null,val backAsset:String?=null,val seatedOffset:List<Float>?=null,val frontAsset:String?=null,val render:Boolean=true,val widgetRect:List<Float>?=null)
+@Serializable data class Point(val x:Float,val y:Float)
+object Navigation {
+ val directions=listOf("S","SW","W","NW","N","NE","E","SE")
+ fun direction(dx:Float,dy:Float,previous:String="S"):String {if(hypot(dx,dy)<0.01)return previous;val degrees=(atan2(dx,-dy)*180/PI+360)%360;val index=((degrees+22.5)/45).toInt()%8;val target=listOf("N","NE","E","SE","S","SW","W","NW")[index];val old=listOf("N","NE","E","SE","S","SW","W","NW").indexOf(previous)*45.0;val difference=abs((degrees-old+540)%360-180);return if(difference<27.5)previous else target}
+ fun step(from:Point,to:Point,seconds:Float,speed:Float=38f):Point{val dx=to.x-from.x;val dy=to.y-from.y;val distance=hypot(dx,dy);if(distance<.001f)return to;val amount=min(distance,speed*seconds.coerceIn(0f,.1f));return Point(from.x+dx/distance*amount,from.y+dy/distance*amount)}
+ fun collides(p:Point,props:List<Furniture>,except:String?=null,bounds:List<Float> = listOf(18f,241f,348f,183f),radius:List<Float> = listOf(7f,3f),exceptIds:Set<String> = emptySet()):Boolean=props.any{val c=it.collider;val clearance=it.walkClearance;it.id!=except&&it.id !in exceptIds&&((c!=null&&p.x>c[0]-radius[0]&&p.x<c[0]+c[2]+radius[0]&&p.y>c[1]-radius[1]&&p.y<c[1]+c[3]+radius[1])||(clearance!=null&&p.x>clearance[0]&&p.x<clearance[0]+clearance[2]&&p.y>clearance[1]&&p.y<clearance[1]+clearance[3]))}||p.x !in bounds[0]..(bounds[0]+bounds[2])||p.y !in bounds[1]..(bounds[1]+bounds[3])
+ fun safe(a:Point,b:Point,props:List<Furniture>,bounds:List<Float> = listOf(18f,241f,348f,183f),radius:List<Float> = listOf(7f,3f),exceptIds:Set<String> = emptySet()):Boolean{val steps=ceil(hypot(b.x-a.x,b.y-a.y)/3).toInt().coerceAtLeast(1);return (0..steps).all{i->!collides(Point(a.x+(b.x-a.x)*i/steps,a.y+(b.y-a.y)*i/steps),props,bounds=bounds,radius=radius,exceptIds=exceptIds)}}
+ fun route(from:Point,target:String,nodes:List<Waypoint>,props:List<Furniture>,bounds:List<Float> = listOf(18f,241f,348f,183f),radius:List<Float> = listOf(7f,3f)):List<Point>{val start=nodes.filter{safe(from,Point(it.point[0],it.point[1]),props,bounds,radius)}.minByOrNull{hypot(it.point[0]-from.x,it.point[1]-from.y)}?:return emptyList();val queue=ArrayDeque<List<String>>();queue.add(listOf(start.id));val seen=mutableSetOf(start.id);while(queue.isNotEmpty()){val path=queue.removeFirst();val current=nodes.first{it.id==path.last()};if(current.id==target)return path.map{val n=nodes.first{n->n.id==it};Point(n.point[0],n.point[1])};for(link in current.links){val next=nodes.find{it.id==link}?:continue;if(link !in seen&&safe(Point(current.point[0],current.point[1]),Point(next.point[0],next.point[1]),props,bounds,radius)){seen.add(link);queue.add(path+link)}}};return emptyList()}
+}

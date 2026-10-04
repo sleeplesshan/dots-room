@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "streamId": "00000000-0000-4000-8000-000000000001",
+  "eventId": "00000000-0000-4000-8000-000000000002",
+  "seq": 1,
+  "timestamp": "2026-09-30T12:00:00.000Z",
+  "source": {
+    "adapterId": "golden-fixture",
+    "sourceMode": "mock",
+    "sourceSessionId": "fixture"
+  },
+  "type": "state.snapshot",
+  "payload": {
+    "sourceStatus": {
+      "state": "demo",
+      "lastObservedAt": "2026-09-30T12:00:00.000Z",
+      "detail": "golden fixture"
+    },
+    "tasks": [],
+    "messages": [
+      {
+        "messageId": "golden",
+        "conversationId": "fixture",
+        "role": "assistant",
+        "revision": 1,
+        "content": "형아 🌙",
+        "state": "complete",
+        "nextDelta": 0,
+        "completedAt": "2026-09-30T12:00:00.000Z"
+      }
+    ],
+    "usage": {
+      "inputTokens": {
+        "knowledge": "unknown",
+        "value": null,
+        "origin": "unavailable",
+        "scope": "unavailable",
+        "observedAt": null,
+        "freshness": "unknown",
+        "resetAt": null,
+        "unit": "tokens"
+      },
+      "outputTokens": {
+        "knowledge": "unknown",
+        "value": null,
+        "origin": "unavailable",
+        "scope": "unavailable",
+        "observedAt": null,
+        "freshness": "unknown",
+        "resetAt": null,
+        "unit": "tokens"
+      }
+    },
+    "quotas": [],
+    "history": {
+      "truncated": false,
+      "retainedMessageCount": 1
+    },
+    "snapshotId": "00000000-0000-4000-8000-000000000003",
+    "asOfSeq": 1
+  }
+}
