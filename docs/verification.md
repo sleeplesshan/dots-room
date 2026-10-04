@@ -25,11 +25,12 @@
 | Open-Meteo 실제 API | **통과**. 공개 WeatherStore로 서울 대표 지점의 익명 실제 API 응답을 읽어 ready와 모델 시각을 확인. 합성 값·0·누락·오래됨과 사용자 설정 시간대 변환도 통과. |
 | 새 공개 앱 실기기 USB / Tailscale / LTE / 화면 깨우기 | **미검증**. 기존 개인 설치 앱을 업데이트하거나 지속 페어링을 만들지 않음. |
 | 30fps / p95 상태 반영 300ms / 8시간 soak | **미검증**. 빌드·정지 캡처·짧은 GIF를 성능/장시간 검사로 대신하지 않음. |
-| GitHub Actions | 첫 공개 run의 bridge-assets job 통과. Android SDK 준비에서 폐기된 `tools` 패키지 요청이 실패해 `platform-tools`만 설치하도록 수정하고 재검사 중. 실제 로그인/태블릿 검사는 CI와 분리됨. |
+| GitHub Actions | **통과**. [공개 Linux CI 실행](https://github.com/sleeplesshan/dots-room/actions/runs/37215774669), 소스 커밋 `fd75654`: bridge-assets와 android 모두 성공. 브리지·자산·문서·공개 감사 및 Kotlin 단위 검사·debug/release 빌드·lint를 실행. 실제 로그인/태블릿 검사는 CI와 분리됨. |
 
 ## 재현과 읽기 경로
 
 - [설치 명령](setup.md), [캐릭터 팩](characters.md), [제작 템플릿](sprite-prompts.md).
+- 첫 CI의 Android SDK 준비는 폐기된 `tools` 패키지 요청으로 실패했다. `platform-tools`만 설치하도록 수정한 뒤 위 실행에서 통과했다. 이후 문서·라이선스 고지만 정리하는 커밋에는 `[skip ci]`를 사용하며 앱·브리지·자산 코드는 검사한 소스와 동일하다.
 - 브리지 검사는 파일 단위로 순차 실행한다. DOM 200ms 묶음은 고정 시각으로 검사하고, 복구 fixture는 동일 snapshot을 재전달한다. 촬영·빌드와 함께 실행했을 때 발생한 시간 제한 실패 후 자원 부하를 줄여 최종 78 tests를 통과했다. 이 논리 검사를 실제 브라우저 반영 지연 측정으로 해석하지 않는다.
 - 모든 소개 화면은 고정 합성 대화·메모·한도·날씨·시각을 실제 Compose/Canvas UI에 공급한다. 실제 대화 캡처에 텍스트를 덮어쓰지 않는다. 초기 전체화면 안내와 촬영 환경의 System UI 오류에 가린 캡처는 폐기하고 다시 촬영했다. 활성 창과 화면 크기·픽셀 검사를 통과한 앱 화면만 사용한다.
 - 브라우저 메시지는 DOM 변경을 최대 200ms 묶음으로 관찰한다. 프로세스 전달은 비공개 FIFO이고 기본 로그에 본문·이미지·토큰을 남기지 않는다. 최근 로드된 50개를 읽으며 전체 기록 자동 탐색은 하지 않는다.

@@ -1,5 +1,10 @@
 # Licenses and attribution
 
+The root MIT license applies to source code and documentation. Artwork in
+`assets/` and the artwork visible in screenshots is separately licensed under
+[CC BY-NC 4.0](assets/LICENSE). Bundled fonts and third-party components retain
+their own licenses; the code license does not replace those terms.
+
 | Material | License / source |
 |---|---|
 | Application code, tools, documentation | [MIT](LICENSE), © 2026 sleeplesshan |
